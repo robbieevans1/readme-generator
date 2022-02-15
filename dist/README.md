@@ -1,33 +1,33 @@
 
-# ReadME.md Generator
+# readme gen
 
 ## License: MIT  ![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)
 ### https://choosealicense.com/licenses/mit/
 
 ## Project Description
-This application allows you to quickly produce a README.md file using the CLI.
+generates readme files
 
 ## Table of Contents:
-## *[Installation Instructions](#installation)
-## *[Usage Guidelines](#usage)
-## *[Licensing](#license)
-## *[Testing](#tests)
-## *[Contribution](#contribution)
-## *[Questions/Concerns](#questions)
+- [Installation Instructions](#installation)
+- [Usage Guidelines](#usage)
+- [Licensing](#license)
+- [Testing](#tests)
+- [Contribution](#contribution)
+- [Questions/Concerns](#questions)
 
 ## Installation
 ### Please install the following before using this app
-Node needs to be installed on your computer as well as the Inquirer dependency.
+requires node and inquirer
 
 ## Usage
-This project allows you to quickly produce a README.md file from your CLI. All markdown language is built into the functionality.
+generates readme files
 
 ## Contribution
-N/A
+NA
 
 ## Tests:
 ### Run the following commands in your terminal to test this app:
-### Once you have forked this repo you must run the command "node index" in the terminal. Once you have answered a series of questions your README.md file will be produced in the dist file.
+### run the command node index and answer the questions
 
 ## Questions
 ### if you have any questions, please don't hesitate to reach out to me at

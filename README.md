@@ -22,9 +22,6 @@ Node needs to be installed on your computer as well as the Inquirer dependency.
 ## Usage
 This project allows you to quickly produce a README.md file from your CLI. All markdown language is built into the functionality.
 
-![screenshot]()
-
-
 ## Contribution
 N/A
 
@@ -32,6 +29,8 @@ N/A
 ### Run the following commands in your terminal to test this app:
 ### Once you have forked this repo you must run the command "node index" in the terminal. Once you have answered a series of questions your README.md file will be produced in the dist file.
 
+## Walkthrough Link:
+- https://drive.google.com/file/d/1BtCoiNjNpLwdrUWFpOyos18Fk8aKPux1/view
 
 ## Questions
 ### if you have any questions, please don't hesitate to reach out to me at
