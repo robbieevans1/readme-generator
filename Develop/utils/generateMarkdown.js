@@ -59,15 +59,15 @@ function generateMarkdown(data) {
 ${data.description}
 
 ## Table of Contents:
- ### *[Installation Instructions](#installation)
- ### *[Usage Guidelines](#usage)
- ### *[Licensing](#license)
- ### *[Testing](#tests)
- ### *[Contribution](#contribution)
- ### *[Questions/Concerns](#questions)
+- [Installation Instructions](#installation)
+- [Usage Guidelines](#usage)
+- [Licensing](#license)
+- [Testing](#tests)
+- [Contribution](#contribution)
+- [Questions/Concerns](#questions)
 
- ## Installation
- ### Please install the following before using this app
+## Installation
+### Please install the following before using this app
 ${data.installation}
 
 ## Usage

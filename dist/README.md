@@ -8,15 +8,15 @@
 This application allows you to quickly produce a README.md file using the CLI.
 
 ## Table of Contents:
- ## *[Installation Instructions](#installation)
- ## *[Usage Guidelines](#usage)
- ## *[Licensing](#license)
- ## *[Testing](#tests)
- ## *[Contribution](#contribution)
- ## *[Questions/Concerns](#questions)
+## *[Installation Instructions](#installation)
+## *[Usage Guidelines](#usage)
+## *[Licensing](#license)
+## *[Testing](#tests)
+## *[Contribution](#contribution)
+## *[Questions/Concerns](#questions)
 
- ## Installation
- ### Please install the following before using this app
+## Installation
+### Please install the following before using this app
 Node needs to be installed on your computer as well as the Inquirer dependency.
 
 ## Usage
