@@ -1,22 +1,23 @@
 const index = require("../index.js");
+const inquirer = require('inquirer')
+const fs = require('fs')
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
-let badge = "";
-if (license === "MIT") {
-	badge =
-		"![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)";
-} else if (license === "Apache 2.0") {
-	badge =
-		"![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)";
-} else if (license === "GPL v3.0") {
-	badge =
-		"![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)";
-} else {
-	badge = "";
+function renderLicenseBadge(license) {
+  let badge = '';
+  if(license === 'MIT') {
+      badge = '![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)'
+  } else if (license === 'Apache 2.0') {
+      badge = '![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)'
+  } else if (license === 'GNU GPLv3') {
+      badge = '![License: GNU GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)'
+  } else {
+    badge = ""
+  }
+  return badge;
 }
-return badge;
+
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
@@ -31,6 +32,7 @@ function renderLicenseLink(license) {
       licenseLink = ""
     }
     return licenseLink;
+  }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -48,13 +50,15 @@ return licenseSection;
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
 	return `
-# ${data.projectName}
+# ${data.title}
+
+## ${renderLicenseSection(data.license)} ${renderLicenseBadge(data.license)}
+### ${renderLicenseLink(data.license)}
 
 ## Project Description
 ${data.description}
 
-## Table of Contents
- *[Description](#description)
+## Table of Contents:
  *[Installation Instructions](#installation)
  *[Usage Guidelines](#usage)
  *[Licensing](#license)
@@ -63,20 +67,26 @@ ${data.description}
  *[Questions/Concerns](#questions)
 
  ## Installation
-${data.installInstructions}
+ ### Please install the following before using this app
+${data.installation}
 
 ## Usage
-${data.usageInfo}
-
-### Licensing
-${data.installInstructions} 
-${renderLicenseSection(data)}
+${data.usage}
 
 ## Contribution
-${data.contribGuidelines}
+${data.contribution}
 
+## Tests:
+### Run the following commands in your terminal to test this app:
+### ${data.tests}
+
+## Questions
+### if you have any questions, please don't hesitate to reach out to me at
+### Github: https://github.com/${data.username}
+### or
+### Email: ${data.email}
 `;
 }
-}
+
 
 module.exports = generateMarkdown

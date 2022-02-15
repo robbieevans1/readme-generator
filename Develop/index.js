@@ -37,6 +37,32 @@ const questions = [
     message: "Please describe the installtion process if applicable:",
 },
 {
+  type: 'input',
+  name: 'usage',
+  message: 'What is the use of your project?',
+  validate: usageInput => {
+      if (usageInput) {
+          return true;
+      } else {
+          console.log('Please provide a use for your project');
+          return false;
+      }
+  }
+},
+{
+  type: 'input',
+  name: 'tests',
+  message: 'How do you test this project?',
+  validate: testingInput => {
+      if (testingInput) {
+          return true;
+      } else {
+          console.log('Please explain how to test this project');
+          return false;
+      }
+  }
+},
+{
   type: "input",
     name: "contribution",
     message: "If applicable, provide guidelines on how others can contribute",
@@ -45,8 +71,34 @@ const questions = [
   type: "list",
     name: "license",
     message: "Choose a license for your project:",
-    choices: ['MIT','GNU GPLv3','Apache License 2.0','ISC','N/A']
+    choices: ['MIT','GNU GPLv3','Apache 2.0','ISC','N/A']
 },
+{
+  type: 'input',
+  name: 'username',
+  message: 'What is your Github username?',
+  validate: askMeInput => {
+      if (askMeInput) {
+          return true;
+      } else {
+          console.log('Please provide your username so others can reach out to you with questions');
+          return false;
+      }
+  }
+},
+{
+  type: 'input',
+  name: 'email',
+  message: 'What is your email?',
+  validate: emailInput => {
+      if (emailInput) {
+          return true;
+      } else {
+          console.log('Please provide an email');
+          return false;
+      }
+  }
+}
 ];
 
 // TODO: Create a function to write README file
