@@ -117,7 +117,7 @@ function init() {
   inquirer.prompt(questions)
   .then(function (newProject) {
     console.log(newProject)
-    writeToFile("../dist/README.md", generateMarkdown(newProject))
+    writeToFile("dist/README.md", generateMarkdown(newProject))
   })
   .catch(err => {
     console.log(err)

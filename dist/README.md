@@ -1,11 +1,11 @@
 
-# readme gen
+# d
 
 ## License: MIT  ![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)
 ### https://choosealicense.com/licenses/mit/
 
 ## Project Description
-generates readme files
+d
 
 ## Table of Contents:
 - [Installation Instructions](#installation)
@@ -17,20 +17,20 @@ generates readme files
 
 ## Installation
 ### Please install the following before using this app
-requires node and inquirer
+d
 
 ## Usage
-generates readme files
+d
 
 ## Contribution
-NA
+d
 
 ## Tests:
 ### Run the following commands in your terminal to test this app:
-### run the command node index and answer the questions
+### d
 
 ## Questions
 ### if you have any questions, please don't hesitate to reach out to me at
-### Github: https://github.com/robcabobb
+### Github: https://github.com/d
 ### or
-### Email: robert.m.evans3@gmail.com
+### Email: d
